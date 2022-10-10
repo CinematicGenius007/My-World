@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+.logo {
+  font-family: "GT", serif;
+  background: -webkit-linear-gradient(0deg, #4285f4, #db4437, #f4b400, #0f9d58);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes animation-rotate-hue {
+  from { filter: hue-rotate(0deg); }
+  to { filter: hue-rotate(720deg); }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main-front-head {
+  /*background: #0f0c00 no-repeat left;*/
+  background: -webkit-linear-gradient(45deg, #4285f4, #db4437, #f4b400, #0f9d58);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animation-rotate-hue 10s ease infinite alternate-reverse;
+}
+
+@keyframes delicate-bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* url("https://www.slidebackground.com/uploads/simple/illuminated-simple-powerpoint-backgrounds.jpg") */

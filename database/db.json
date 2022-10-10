@@ -1,0 +1,56 @@
+{
+  "users": [],
+  "universes": [
+    {
+      "id": 1,
+      "image": "https://media.istockphoto.com/photos/colorful-galaxy-with-nebula-clouds-and-starlight-picture-id536291617?b=1&k=20&m=536291617&s=170667a&w=0&h=UQRkrCmXR-qg6OdR7vRW5MgMNaKsDxJooRNLMrAOWNY=",
+      "code": "Aminah",
+      "tags": [
+        "suitable", "outgoing", "ceaseless", "sophisticated", "elated", "hallowed", "boring", "classy", "keen", "eastern"
+      ],
+      "picks": 1209820
+    },
+    {
+      "id": 2,
+      "image": "https://media.istockphoto.com/photos/night-sky-with-stars-and-nebula-picture-id507026288?b=1&k=20&m=507026288&s=170667a&w=0&h=-V0kHgEvvgSLP5eiVTNfMwxTgurg90RgPv4FlO02T6U=",
+      "code": "Belinda",
+      "tags": ["famous", "absorbing", "frantic", "southern", "right", "shrill", "narrow", "wild", "glossy", "bitter"],
+      "picks": 239727
+    },
+    {
+      "id": 3,
+      "image": "https://media.istockphoto.com/photos/space-milky-way-picture-id1170047942?b=1&k=20&m=1170047942&s=170667a&w=0&h=byCU5lXtsX-7ya_8nqNjLWTW_gCJ4H0o_ICRJmqeXzg=",
+      "code": "Chantria",
+      "tags": ["fearless", "profuse", "juvenile", "nutritious", "future", "near", "pretty", "possessive", "creepy", "merciful"],
+      "picks": 123485
+    },
+    {
+      "id": 4,
+      "image": "https://media.istockphoto.com/photos/dream-deep-space-travel-background-picture-id1147491855?b=1&k=20&m=1147491855&s=170667a&w=0&h=660LgHDLQFGjQGMpGredQsWWIed3gQPwk_jXtd89GhY=",
+      "code": "Cinzia",
+      "tags": ["innate", "needless", "momentous", "tough", "willing", "afraid", "violet", "silky", "fascinated", "cloistered"],
+      "picks": 109236
+    },
+    {
+      "id": 5,
+      "image": "https://images.unsplash.com/photo-1615114814213-a245ffc79e9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmVidWxhfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "code": "Cressida",
+      "tags": ["whole", "absurd", "scandalous", "few", "disgusting", "splendid", "absent", "jittery", "cut", "robust"],
+      "picks": 91298
+    },
+    {
+      "id": 6,
+      "image": "https://images.unsplash.com/photo-1632700879570-85045397819b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5lYnVsYXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+      "code": "Dionne",
+      "tags": ["filthy", "broken", "impressive", "ten", "majestic", "curved", "wild", "long-term", "absurd", "pointless"],
+      "picks": 81028
+    },
+    {
+      "id": 7,
+      "image": "https://images.unsplash.com/photo-1617191519105-d07b98b10de6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG5lYnVsYXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+      "code": "Haruko",
+      "tags": ["hanging", "sweet", "damp", "scandalous", "fair", "ossified", "new", "optimal", "parched", "shiny"],
+      "picks": 70172
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navigation Bar */
+
+.nav-link {
+    @apply py-1 px-3 rounded-sm hover:text-neutral-100 hover:shadow-[4px_4px_0_0_#212121];
+    transition: background-color 0.2s ease-in-out, text-shadow 0.2s ease, color 0.1s ease-in-out 0.1s;
+}
