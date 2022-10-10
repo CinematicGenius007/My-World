@@ -15,7 +15,20 @@
   background: -webkit-linear-gradient(45deg, #4285f4, #db4437, #f4b400, #0f9d58);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animation-rotate-hue 10s ease infinite alternate-reverse;
+  animation: animation-rotate-hue 10s ease 2s infinite alternate-reverse;
+}
+
+@keyframes animation-bounce-text-gradient {
+  from { background-position: left 0 top 0; }
+  to { background-position: left -400px top 0; }
+}
+
+.animate-heading-text {
+  background: -webkit-repeating-linear-gradient(0deg, #4285f4 0% 25%, #db4437 25% 50%, #f4b400 50% 75%, #0f9d58 75% 100%) repeat-x;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400px 100%;
+  animation: animation-bounce-text-gradient 4s linear infinite;
 }
 
 @keyframes delicate-bounce {
@@ -27,6 +40,11 @@
     transform: translateY(0%);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+
+@keyframes background-transition {
+  0% {opacity: 1;}
+  10%, 100% { opacity: 0; }
 }
 
 /* url("https://www.slidebackground.com/uploads/simple/illuminated-simple-powerpoint-backgrounds.jpg") */
