@@ -3,25 +3,12 @@ import tengyart from "../../assets/photos/tengyart-pYlSLXkduQg-unsplash.jpg";
 import nasa from "../../assets/photos/nasa-rTZW4f02zY8-unsplash.jpg";
 import blackSunset from "../../assets/photos/black-background-minimalism-mountains-sunset-wallpaper-preview.jpg";
 import {useEffect, useState} from "react";
-// import axios from "axios";
 
 const Home = () => {
     const [population, setPopulation] = useState(8971280);
-    // const [universes, setUniverse] = useState([]);
     useEffect(() => {
         setTimeout(() => setPopulation(population + 1), 4000);
     }, [population]);
-
-    // useEffect(() => {
-    //     axios.get("http://localhost:3020/universes", {
-    //         params: {
-    //             _page: 1,
-    //             _limit: 4
-    //         }
-    //     })
-    //         .then(request => request.data)
-    //         .then(result => setUniverse(() => [...result]))
-    // }, []);
 
     return (
         <main className="flex-1 bg-gray-300">
@@ -31,35 +18,38 @@ const Home = () => {
                     <img className="absolute w-48 z-20 translate-y-16 translate-x-32" src={tengyart} alt="tengyart" />
                     <img className="absolute w-48 z-30 translate-y-32 translate-x-8" src={nasa} alt="nasa" />
                 </div>
-                <div className="main-front-head flex-1 my-auto py-12 text-7xl lg:text-8xl">
+                <div className="main-front-head flex-1 my-auto py-12 text-7xl lg:text-8xl transition-[font-size] duration-1000">
                     <div>welcome</div>
                     <div>to</div>
                     <div className="font-[GT]">nebula</div>
                 </div>
             </div>
-            <div className="py-10 px-8 md:px-12 lg:px-16 w-full bg-violet-400">
-                <div className="text-7xl sm:text-8xl lg:text-9xl animate-heading-text">world order</div>
-                <p className="mt-8 text-lg md:text-xl lg:text-2xl">
-                    <span className="text-[3.8rem] lg:text-[4.5rem]" style={{ float: "left", paddingRight: "0.3rem", lineHeight: "1", marginBottom: "-1rem" }}>N</span>ew world order, where you get to choose the foundational principles of the universe.
-                    Where you are literally in control of everything and can decide what happens and where it happens.
-                    They claimed there is no such thing as the ideal universe, yet we found one.
-                    Everything you do and everything that occurs in your own universe is contained there and has no impact on anywhere else.
-                    So you don't have to worry about committing crimes because there are no rules and there are no laws of any kind.
-                    You're the master of your own universe, the GOD if you may.
-                    Thus creating endless possibilities in endless universes.
-                    Now you may wonder how exactly it happens but that is something we are currently unable to explain to you as we ourselves have no idea.
-                </p>
+            <div className="flex flex-col md:flex-row py-10 px-8 md:px-12 lg:px-16 w-full bg-violet-400">
+                <span className="material-symbols-rounded py-8 px-6 text-[5rem] md:text-[10rem] transition-[font-size] duration-1000">settings_accessibility</span>
+                <div className="px-8 md:px-20">
+                    <div className="text-7xl sm:text-8xl lg:text-9xl text-black transition-[font-size] duration-1000 animate-heading-text">prophecy</div>
+                    <p className="mt-8 text-justify">
+                        <span className="text-[3.2rem]" style={{ float: "left", paddingRight: "0.3rem", lineHeight: "1", marginBottom: "-1rem" }}>N</span>ew world order, where you get to choose the foundational principles of the universe.
+                        Where you are literally in control of everything and can decide what happens and where it happens.
+                        They claimed there is no such thing as the ideal universe, yet we found one.
+                        Everything you do and everything that occurs in your own universe is contained there and has no impact on anywhere else.
+                        So you don't have to worry about committing crimes because there are no rules and there are no laws of any kind.
+                        You're the master of your own universe, the GOD if you may.
+                        Thus creating endless possibilities in endless universes.
+                        Now you may wonder how exactly it happens but that is something we are currently unable to explain to you as we ourselves have no idea.
+                    </p>
+                </div>
             </div>
             <div className="py-10 px-8 md:px-12 lg:px-16 w-full bg-stone-300">
-                <h1 className="text-7xl sm:text-8xl lg:text-9xl">population</h1>
+                <h1 className="text-7xl sm:text-8xl lg:text-9xl text-black transition-[font-size] duration-1000">population</h1>
                 <div className="flex flex-col md:flex-row mt-8">
-                    <div className="flex-[1_1_0%] pt-4 flex justify-around flex-wrap md:block text-4xl">
-                        <h3 className="mt-6 text-g-blue">Total</h3>
-                        <h3 className="mt-6 text-g-red">Male</h3>
-                        <h3 className="mt-6 text-g-yellow">Female</h3>
-                        <h3 className="mt-6 text-g-green">Kids</h3>
+                    <div className="pt-4 pr-12 flex justify-around flex-wrap md:block text-4xl">
+                        <h3 className="mt-6 px-4 text-g-blue">Total</h3>
+                        <h3 className="mt-6 px-4 text-g-red">Male</h3>
+                        <h3 className="mt-6 px-4 text-g-yellow">Female</h3>
+                        <h3 className="mt-6 px-4 text-g-green">Kids</h3>
                     </div>
-                    <div className="flex-[3_3_0%] pt-4 text-2xl text-gray-200">
+                    <div className="flex-[3_3_0%] pt-4 max-w-2xl text-2xl text-gray-200">
                         <div className="mt-6 py-1 px-2 rounded bg-g-blue">{population}</div>
                         <div className="mt-6 py-1 px-2 rounded bg-g-red" style={{width: "40%"}}>{Math.round(population * 0.4)}</div>
                         <div className="mt-6 py-1 px-2 rounded bg-g-yellow" style={{width: "35%"}}>{Math.round(population * 0.35)}</div>
