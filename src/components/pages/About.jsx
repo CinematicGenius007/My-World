@@ -26,7 +26,7 @@ const About = () => {
             {/*        <span className="material-symbols-rounded text-6xl">arrow_downward</span>*/}
             {/*    </button>*/}
             {/*</div>*/}
-            <div className="w-full min-screen h-[40rem]" style={{background: "linear-gradient(180deg, rgb(209 213 219), #000)"}}></div>
+            <div className="hidden w-full min-screen h-[40rem]" style={{background: "linear-gradient(180deg, rgb(209 213 219), #000)"}}></div>
             <div className="bg-black">
                 <h1 className="py-8 px-12 md:px-16 lg:px-20 text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-amber-200 transition-[font-size] duration-1000">they created a miracle</h1>
                 <p className="py-8 px-12 md:px-16 lg:px-20 w-full max-w-4xl text-xl text-stone-200 text-justify">
@@ -46,7 +46,7 @@ const About = () => {
 
                 </div>
                 <p className="py-8 px-12 md:px-16 lg:px-20 w-full max-w-4xl text-xl text-stone-200 text-justify">
-                    Holy grail... I know, absolutely <a href="https://translate.google.co.in/?sl=fr&tl=en&text=putan%20de&op=translate" className="font-[GT] underline" lang="french">putain de</a> amazing... I know.
+                    Holy grail... I know, absolutely <a target="_blank" href="https://translate.google.co.in/?sl=fr&tl=en&text=putan%20de&op=translate" className="font-[GT] underline" lang="french">putain de</a> amazing... I know.
                 </p>
             </div>
         </section>

@@ -25,7 +25,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="flex flex-col md:flex-row py-10 px-8 md:px-12 lg:px-16 w-full bg-violet-400">
-                <span className="material-symbols-rounded py-8 px-6 text-[5rem] md:text-[10rem] transition-[font-size] duration-1000">settings_accessibility</span>
+                <span className="material-symbols-outlined py-8 px-6 text-[5rem] md:text-[10rem] transition-[font-size] duration-1000">settings_accessibility</span>
                 <div className="px-8 md:px-20">
                     <div className="text-7xl sm:text-8xl lg:text-9xl text-black transition-[font-size] duration-1000 animate-heading-text">prophecy</div>
                     <p className="mt-8 text-justify">

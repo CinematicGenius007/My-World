@@ -19,7 +19,7 @@
 }
 
 .text-g {
-  background: -webkit-linear-gradient(0deg, #4285f4 0% 20%, #db4437 20% 40%, #f4b400 40% 60%, #0f9d58 60% 100%);
+  background: -webkit-linear-gradient(0deg, #212121 0% 20%, #4285f4 20% 40%, #db4437 40% 60%, #f4b400 60% 80%, #0f9d58 80% 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
