@@ -1,15 +1,4 @@
 const About = () => {
-    /*const theContentRef = useRef(null);
-
-    useEffect(() => console.log(theContentRef.current), []);
-
-    const scrollToTheContent = () => {
-        window.scrollTo({
-            x: theContentRef.current.getBoundingClientRect()["left"],
-            y: theContentRef.current.getBoundingClientRect()["top"],
-            behavior: "smooth"
-        });
-    };*/
     return (
         <section className="flex-1 bg-gray-300">
             <h1 className="py-8 px-12 md:px-16 lg:px-20 text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-zinc-700 transition-[font-size] duration-1000">we are a dream company</h1>
@@ -36,7 +25,6 @@ const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 md:px-16 lg:px-20 w-full">
                     <img className="rounded-lg" alt="universe-1" src="https://time.com/wp-content/uploads/2017/10/229-westerlund-21.jpg?w=2000" />
                     <div className="h-full min-h-[16rem] sm:min-h-[20rem] md:min-h-min w-full rounded-lg bg-center bg-cover bg-[url('https://d2pn8kiwq2w21t.cloudfront.net/original_images/main_image_star-forming_region_carina_nircam_final-5mb.jpg')]"></div>
-                    {/*<img className="rounded-lg" alt="universe-2" src="https://d2pn8kiwq2w21t.cloudfront.net/original_images/main_image_star-forming_region_carina_nircam_final-5mb.jpg" />*/}
                     <img className="rounded-lg" alt="universe-2" src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAZn0EO.img?w=768&h=707&m=6" />
                     <div className="h-full min-h-[16rem] sm:min-h-[20rem] md:min-h-min w-full rounded-lg bg-center bg-cover bg-[url('https://scx2.b-cdn.net/gfx/news/hires/2022/webb-telescope-capture-1.jpg')]"></div>
                     <img className="rounded-lg" alt="universe-2" src="http://cdn.eso.org/images/screen/eso0421a.jpg" />
@@ -46,7 +34,7 @@ const About = () => {
 
                 </div>
                 <p className="py-8 px-12 md:px-16 lg:px-20 w-full max-w-4xl text-xl text-stone-200 text-justify">
-                    Holy grail... I know, absolutely <a target="_blank" href="https://translate.google.co.in/?sl=fr&tl=en&text=putan%20de&op=translate" className="font-[GT] underline" lang="french">putain de</a> amazing... I know.
+                    Holy grail... I know, absolutely <a rel="noreferrer" target="_blank" href="https://translate.google.co.in/?sl=fr&tl=en&text=putan%20de&op=translate" className="font-[GT] underline" lang="french">putain de</a> amazing... I know.
                 </p>
             </div>
         </section>

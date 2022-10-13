@@ -53,4 +53,14 @@
   10%, 100% { opacity: 0; }
 }
 
+@keyframes animation-error-modal {
+  from { transform: translateY(-400%); }
+  20%, 80% { transform: translateY(50%); }
+  to { transform: translateY(-400%); }
+}
+
+.animate-error-modal {
+  animation: animation-error-modal 3s ease-in-out 1;
+}
+
 /* url("https://www.slidebackground.com/uploads/simple/illuminated-simple-powerpoint-backgrounds.jpg") */
