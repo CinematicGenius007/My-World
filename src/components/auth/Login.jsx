@@ -22,6 +22,7 @@ const Login = ({onAuth}) => {
         password: "",
         showPassword: false
     });
+    const [errorReason, setErrorReason] = useState("");
     const handleChange = (prop) => (event) => {
         setValues({ ...values, [prop]: event.target.value });
     };
@@ -39,15 +40,18 @@ const Login = ({onAuth}) => {
         axios.get(`http://localhost:3030/users?username=${values.username}`)
             .then(result => result.data)
             .then(data => {
-                if (data) {
+                if (data && data["length"]) {
                     for (let cred of data) {
                         console.log(cred);
                         if (bcrypt.compareSync(values.password, cred["password"])) {
-                            console.log("passed")
                             onAuth({user: cred});
+                            window.localStorage.setItem("universalIdentity", cred["id"]);
                             setTimeout(() => navigate("/"), 100);
                         }
                     }
+                } else {
+                    setErrorReason("No user exist with these credentials");
+                    setTimeout(() => setErrorReason(""), 3000);
                 }
             })
             .catch(error => console.error(error));
@@ -91,6 +95,13 @@ const Login = ({onAuth}) => {
                 </ThemeProvider>
                 <button type="submit" className="py-2 px-4 rounded bg-g-blue text-white">Login</button>
                 <Link className="text-gray-700 mt-6" to="/auth/signup">Create an account -></Link>
+                <div className={`z-[1000] ${errorReason ? 'fixed' : 'hidden'} top-0 left-0 h-full w-full backdrop-blur`}>
+                    <div className="hidden utility -translate-y-72 translate-y-8"></div>
+                    <div className={`mx-auto py-8 px-12 w-[30rem] rounded-lg bg-g-red text-gray-200 -translate-y-[400%] ${errorReason ? 'animate-error-modal' : ''} transition-transform duration-1000`}>
+                        <div className="text-center mb-4"><span className="material-symbols-outlined text-9xl">error</span></div>
+                        <div className="text-2xl">{errorReason}</div>
+                    </div>
+                </div>
             </form>
         </div>
     );

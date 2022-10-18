@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import defaultProfile from './../../assets/photos/alex-suprun-1JGHAAdbL_Y-unsplash.jpg';
 
 const Navbar = ({auth}) => {
     return (
@@ -10,9 +11,7 @@ const Navbar = ({auth}) => {
                 {
                     auth.user
                         ?
-                        (<Link to="/auth/settings" className="account-setting flex items-center justify-center hover:bg-g-red">
-                            <span className="material-symbols-outlined font-light text-2xl leading-none">person</span>
-                        </Link>)
+                        (<Link to="/auth/settings" className="h-6 w-6 rounded-full bg-cover bg-center" style={{backgroundImage: `url('${auth.user && auth.user.photo ? auth.user.photo : defaultProfile}')`}}></Link>)
                         :
                         (<Link to="/auth/login" className="nav-link hover:bg-g-red">Login</Link>)
                 }
