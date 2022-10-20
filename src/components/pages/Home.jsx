@@ -22,7 +22,7 @@ const Home = () => {
                 })
                 .catch(error => console.error(error));
         }
-    }, [universes]);
+    });
 
     return (
         <main className="flex-1 bg-gray-300">
